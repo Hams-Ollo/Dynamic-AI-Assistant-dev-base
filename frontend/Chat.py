@@ -169,17 +169,6 @@ def display_chat_interface():
 
 def main():
     """Main Streamlit application."""
-    # Page configuration
-    st.set_page_config(
-        page_title="AI Agent Graphical User Interface",
-        page_icon="🤖",
-        layout="wide",
-        initial_sidebar_state="expanded"
-    )
-    
-    # Set the app title in sidebar
-    st.sidebar.markdown("# 💬 AI Chat Agent")
-    
     # Display chat interface
     display_chat_interface()
 

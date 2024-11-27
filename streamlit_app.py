@@ -7,6 +7,15 @@ from pathlib import Path
 
 import streamlit as st
 
+# Set page configuration at the very beginning
+st.set_page_config(
+    page_title="Dynamic AI Assistant",
+    page_icon="🤖",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    sidebar_title="💬 AI Chat Assistant"
+)
+
 # Add the project root to the Python path
 project_root = Path(__file__).parent
 sys.path.append(str(project_root))
@@ -23,14 +32,6 @@ def init_session_state():
 
 def main():
     """Main function to run the Streamlit application."""
-    # Set page config
-    st.set_page_config(
-        page_title="Dynamic AI Assistant",
-        page_icon="🤖",
-        layout="wide",
-        initial_sidebar_state="expanded",
-    )
-
     # Initialize session state
     init_session_state()
 

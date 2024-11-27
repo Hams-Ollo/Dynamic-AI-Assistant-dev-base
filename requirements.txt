@@ -18,7 +18,8 @@ redis-om>=0.2.1
 tiktoken>=0.6.0
 
 # Vector Store and Embeddings
-chromadb>=0.4.24
+chromadb>=0.4.24,<0.5.0
+hnswlib>=0.7.0
 faiss-cpu>=1.7.4
 
 # Document Processing
